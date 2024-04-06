@@ -1,0 +1,95 @@
+/* import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
+
+/*Root Variables*/
+:root{
+    --mainText:black;
+    --secondaryText:#1593e8;
+}
+
+/*Navbar Styles */
+.blue-navbar{
+    background-color:rgb(243, 251, 253) !important;
+}
+
+.navbar-brand {
+    color: rgb(201, 50, 88) !important;
+    font-family: "Poppins", sans-serif; 
+}
+
+.navbar-nav .nav-link {
+    color: rgb(201, 50, 88) !important;
+}
+
+.navbar-toggler {
+    color: rgb(201, 50, 88) !important;
+}
+
+/*Body Styles */
+html, body{
+    padding: 0;
+    margin: 0;
+    background-image: url("/static/img/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/*Heading Styles */
+h1, h2, h3, h4, h5, h6, strong{
+    color: var(--mainText);
+}
+
+h1 { font-size: 56px;
+     font-family: "Rowdies", sans-serif;}
+h2 { font-size: 36px;}
+h3 { font-size: 28px;
+     font-family: "Rowdies", sans-serif;}
+h4 { font-size: 24px;}
+h5 { font-size: 20px;}
+h6 { font-size: 16px;}
+
+/* Text Styles */
+p, li, span, label, input, textarea{
+    color: var(--secondaryText);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #17a2b8   /*link*/
+}
+
+/*Greeting Wrapper*/
+.greeting-wrapper {
+    display: grid;
+    text-align: center;
+    align-content: center;
+    border: 2px dashed lightcoral;
+    min-height: 10em;
+    margin-bottom:10px; /*bottm margin*/
+}
+
+/* Profile */
+.profile-picture {
+    display: block; /* block element */
+    margin: auto;  /* center img horizontally*/
+    position: relative; /* Allows for vertiacl centering */
+    top: 50%; /* Moves the top edge of the image to the vertical center */
+
+    width: 300px;  /* width of circle */
+    height: 300px;
+    border: 1px solid white; /* circle border*/
+    border-radius: 50%; /* make it circular */
+    overflow: hidden; /* Ensure the image doesn't overflow */
+    margin-top: 20px;  /*Add space between the greeting and profile */
+}
+
+.profile-container img{
+    width: 100;  /*Ensure img fills container */
+    height: auto; /* maintain aspect ratio */
+    display: block;  /* Remove any default margins */
+}
