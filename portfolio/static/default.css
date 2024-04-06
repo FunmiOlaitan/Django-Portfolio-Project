@@ -10,7 +10,7 @@
 
 /*Navbar Styles */
 .blue-navbar{
-    background-color:rgb(243, 251, 253) !important;
+    background-color:rgb(159, 228, 245) !important;
 }
 
 .navbar-brand {
@@ -68,7 +68,6 @@ a{
     display: grid;
     text-align: center;
     align-content: center;
-    border: 2px dashed lightcoral;
     min-height: 10em;
     margin-bottom:10px; /*bottm margin*/
 }
@@ -93,3 +92,22 @@ a{
     height: auto; /* maintain aspect ratio */
     display: block;  /* Remove any default margins */
 }
+
+/*Homepage about button*/
+.about-me-button {
+    background-color: green;
+    border: black;
+    color: white;
+    padding: 13px 32px;
+    text-align: center;
+    text-decoration: blue;
+    display: inline-block;
+    font-size: h6;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px
+}
+.about-me-button:hover {
+    background-color: greenyellow;
+}
+  
