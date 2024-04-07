@@ -110,4 +110,41 @@ a{
 .about-me-button:hover {
     background-color: greenyellow;
 }
-  
+
+.nav-link i{
+    font-size: 25px !important;
+    color: black;
+}
+
+.greeting-wrapper{
+    display:grid; 
+    text-align: center;
+    align-content: center;
+    border: 2px dashed lightcoral; 
+    min-height: 5em;
+    margin-top: 40px;
+
+}
+.project-one-wrapper {
+    background-color: rgb(187, 187, 227);
+    border: 1px solid lightcoral;
+    border-radius:15px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    'left-column right-column';
+    grid-template-rows: 10em 10em;
+}
+
+.left-column{
+    grid-area: left-column;
+    margin-bottom: 150px;
+
+}
+
+.right-column{
+    grid-area: right-column;
+}
+
+
