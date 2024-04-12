@@ -6,13 +6,13 @@ def home(request):
     #return HttpResponse("This is my homepage (/)")
     return render(request, 'home.html')
 
-def about(request):
-    #return HttpResponse("This is my homepage (/about)")
-    return render(request, 'about.html')
-
 def projects(request):
-    #return HttpResponse("This is my homepage (/project)")
+    #return HttpResponse("This is my homepage (/projects)")
     return render(request, 'projects.html')
+
+def highlights(request):
+    #return HttpResponse("This is my homepage (/highlights)")
+    return render(request, 'highlights.html')
 
 def contact(request):
     if request.method=="POST":
