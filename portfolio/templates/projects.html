@@ -10,10 +10,9 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/static/default.css">
-    
-    <!--Font Awesome library-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-kHJrrZ6HuH9/PKmzZ7FNwQS//h9vIlDiD6U7Z5HUQe3Fm3nJJoNWN1xnBz9NXQEgp3erFgUMjZvTIQcYcFSUuQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!--Font Awesome CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <title>Home</title>
   </head>
@@ -25,62 +24,28 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <a class="nav-link active me-3" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/about">About</a>
+                <a class="nav-link me-3" href="/about">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="projects">Projects</a>
+                <a class="nav-link me-3" href="projects">Hightlights</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact">Contact me</a>
               </li>
             </ul>
+            <div class="d-flex">
+              <a class="nav-link" href="https://github.com/FunmiOlaitan"><i class="fab fa-linkedin"></i></a>
+              <a class="nav-link" href="https://www.linkedin.com/in/funmilola-olaitan-93478b150"><i class="fab fa-github"></i></a>
+            </div>
           </div>
         </div>
       </nav>
-
-      <h1 class="text-center mt-5 mb-4">My Projects</h1>
-
-      <div class="project-container">
-        <div class="project-description">
-            <h2>Smart Mirror</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat velit id libero consectetur, nec fermentum ligula accumsan.</p>
-        </div>
-        <div class="slideshow-container">
-            <div class="slideshow-inner">
-                <img class="slideshow-img" src="/static/img/smartM.JPG" alt="Image 1">
-                <img class="slideshow-img" src="/static/img/background.JPG" alt="Image 2">
-                <img class="slideshow-img" src="/static/img/me.JPG" alt="Image 3">
-            </div>
-            <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
-            <a class="next" onclick="moveSlide(1)">&#10095;</a>
-        </div>
-    </div>
-
-    <script>
-        let slideIndex = 1;
-
-        function moveSlide(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function showSlides(n) {
-            const slides = document.querySelectorAll('.slideshow-img');
-            if (n > slides.length) {slideIndex = 1;}
-            if (n < 1) {slideIndex = slides.length }
-            for (let i =0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-            }
-            slides[slideIndex - 1].style.display = "block";
-        }
-
-        showSlides(slideIndex);
-    </script>
-
+      
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -92,5 +57,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
 </html>

@@ -133,17 +133,24 @@ a{
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     overflow: hidden;
     display: flex;
+    flex-direction: column;
 }
 
 .project-description {
-    flex: 1;
     padding:20px;
+    border-bottom: 1px solid white;
+}
+
+.project-details {
+    display: none;
+    padding: 20px;
+    border-bottom: 1px solid white;
 }
 
 .slideshow-container {
-    flex: 1;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; 
+    margin-top: 20px;
 
 }
 .slideshow-inner {
@@ -152,7 +159,8 @@ a{
 }
 .slideshow-img {
     width: 100%;
-    flex-shrink: 0;
+    height: 300px;
+    object-fit: cover;
 }
 
 /* Navigation Buttons */
@@ -172,11 +180,11 @@ a{
     right: 0;
 }
 
-/* Responsive styles */
-@media (max-width: 600px) {
-    .project-container {
-        flex-direction:column;
-    }
+.view-details {
+    text-align: center;
+    cursor: pointer;
+    color: blue;
+    margin-top: 10px;
 }
 
 /* contact container */
