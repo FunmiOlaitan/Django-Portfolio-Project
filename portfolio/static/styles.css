@@ -1,0 +1,190 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Rowdies:wght@300;400;700&display=swap");
+
+/* Root Variables */
+:root {
+    --mainText: black;
+    --mainFont: "Rowdies", sans-serif;
+    --h2-size: 36px;
+    --p-size: 16px;
+}
+
+/* General Styles */
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    font-family: var(--mainFont);
+    color: var(--mainText);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Navbar Styles */
+.blue-navbar {
+    background-color: rgb(219, 218, 218) !important;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: var(--mainText) !important;
+    font-family: var(--mainFont);
+}
+
+.navbar-nav .nav-link {
+    font-weight: 200;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: black;
+    color: white !important;
+}
+
+.navbar-toggler {
+    color: black !important;
+}
+
+.navbar-collapse {
+    margin-top: 8px;
+}
+
+.d-flex {
+    margin-left: -15px;
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6, strong {
+    color: var(--mainText);
+    font-family: var(--mainFont);
+}
+
+h1 { font-size: 56px; }
+h2 { font-size: var(--h2-size); }
+h3 { font-size: 28px; }
+h4 { font-size: 24px; }
+h5 { font-size: 20px; }
+h6 { font-size: var(--p-size); }
+
+/* Button Styles */
+.btn-primary, .btn-dark {
+    color: #fff;
+    background-color: black;
+    border-color: black;
+    padding: .3rem 1rem;
+    font-size: 1.25rem;
+    border-radius: .5rem;
+}
+
+.btn-primary:hover, .btn-dark:hover {
+    background-color: #35373b;
+}
+
+/* Home Page Styles */
+.mt-5 {
+    margin-top: 5rem !important;
+}
+
+/* Projects Page Styles */
+.project-container, .contact-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e9ecef;
+}
+
+.slideshow-container {
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.slideshow-inner {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    transition: transform 0.5s ease;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.project-description {
+    padding: 1px;
+}
+
+.project-details {
+    display: none;
+    padding: 20px;
+    border-bottom: 1px solid white;
+}
+
+.slideshow-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Contact Page Styles */
+.contact-container {
+    display: flex;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    padding: 10px 30px;
+}
+
+.section-content {
+    color: #666;
+    font-size: var(--p-size);
+    line-height: 1.6;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #007bff;
+}
