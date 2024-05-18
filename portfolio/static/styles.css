@@ -3,7 +3,7 @@
 
 /* Root Variables */
 :root {
-    --mainText: black;
+    --mainColor: black;
     --mainFont: "Rowdies", sans-serif;
     --h2-size: 36px;
     --p-size: 16px;
@@ -14,18 +14,12 @@ html, body {
     padding: 0;
     margin: 0;
     background-color: white;
-    font-family: var(--mainFont);
-    color: var(--mainText);
 }
 
 ul {
     list-style: none;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
 
 /* Navbar Styles */
 .blue-navbar {
@@ -61,17 +55,11 @@ a {
 }
 
 /* Heading Styles */
-h1, h2, h3, h4, h5, h6, strong {
-    color: var(--mainText);
+h1, h2, strong {
+    color: var(--mainColor);
     font-family: var(--mainFont);
 }
 
-h1 { font-size: 56px; }
-h2 { font-size: var(--h2-size); }
-h3 { font-size: 28px; }
-h4 { font-size: 24px; }
-h5 { font-size: 20px; }
-h6 { font-size: var(--p-size); }
 
 /* Button Styles */
 .btn-primary, .btn-dark {
@@ -93,98 +81,93 @@ h6 { font-size: var(--p-size); }
 }
 
 /* Projects Page Styles */
-.project-container, .contact-container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #e9ecef;
+.project-card {
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 50px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
-.slideshow-container {
-    position: relative;
-    overflow: hidden;
-    margin-top: 20px;
+.project-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
 }
 
-.slideshow-inner {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    transition: transform 0.5s ease;
+.project-card p {
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-}
-
-.next {
-    right: 0;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.project-description {
-    padding: 1px;
-}
-
-.project-details {
-    display: none;
-    padding: 20px;
-    border-bottom: 1px solid white;
-}
-
-.slideshow-img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
 
 /* Contact Page Styles */
+
 .contact-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    margin-top: 15px; 
 }
 
-.left-section, .right-section {
-    flex: 1;
-    padding: 10px 30px;
+.contact-card, .form-card {
+    background-color: #5e6066;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(11, 11, 11, 0.1);
+    width: 100%;
+    max-width: 400px;
 }
 
-.section-content {
-    color: #666;
-    font-size: var(--p-size);
-    line-height: 1.6;
+.form-card {
+    background-color: white;
+    color: black;
 }
 
-.contact-form {
-    margin-top: 20px;
+.form-card h2 {
+    color:  #333;
 }
 
-.form-group {
+.contact-card h2 {
     margin-bottom: 20px;
 }
 
-.form-label {
-    font-weight: bold;
+.contact-card p {
+    margin: 10px 0;
 }
 
-.form-control {
+.contact-card i {
+    margin-right: 10px;
+}
+
+.contact-card a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+.form-card .form-group {
+    margin-bottom: 15px;
+}
+
+.form-card .form-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-card .btn {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    background-color: black;
+    border: none;
 }
 
-.form-control:focus {
-    outline: none;
-    border-color: #007bff;
+.form-card .btn:hover {
+    background-color: #35373b;
 }

@@ -9,15 +9,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="\static\styles.css">
-  
+    <link rel="stylesheet" href="/static/styles.css">
 
     <!--Font Awesome CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <title>Home</title>
-  </head>
-  <body>
+    <title>Projects</title>
+</head>
+<body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light blue-navbar">
       <div class="container-fluid">
           <a class="navbar-brand" href="/">Funmi</a>
@@ -44,144 +43,42 @@
       </div>
   </nav>
 
-      <div class="container mt-5">
+    <div class="container mt-5">
         <h1 class="text-center mb-4">My Projects</h1>
         <div class="row">
-          <!-- Project container 1 -->
-          <div class="col-md-6">
-            <div class="project-container">
-              <div class="project-description">
-                <h2>Smart Mirror with GUI</h2>
-                <p>This Python application creates an interactive smart mirror.</p>
-              </div>
+            <div class="col-md-4">
+                <div class="project-card">
+                    <h2>Road Sign Detection using Machine Learning</h2>
+                    <p>The Road Sign Detection Project utilises deep learning techniques, specifically Convolutional Neural Networks (CNNs), alongside TensorFlow and Keras, to develop a robust model aimed at identifying traffic sign images. To increase the model's accuracy, data preprocessing and augmentation methods are applied. Additionally, visualisation tools are integrated into the project for data exploration. Overall, the traffic sign model achieved a training accuracy of approximately 80% and a validation accuracy of around 87%.</p>
+                </div>
             </div>
-          </div>
-          <!-- Slideshow container 1 -->
-          <div class="col-md-6">
-            <div class="slideshow-container" id="slideshow1">
-              <div class="slideshow-inner">
-                <video class="slideshow-img" controls>
-                  <source src="/static/video/my_video.mp4" type="video/mp4">
-                  Your browser does n/static/img/IMG_8300.MOVot support the video tag.
-                </video>
-                <img class="slideshow-img" src="/static/img/IMG_8295.jpg" alt="Image 1">
-                <img class="slideshow-img" src="/static/img/IMG_8300.MOV" alt="Image 2">
-                <img class="slideshow-img" src="/static/img/IMG_8352.jpg" alt="Image 3">
-              </div>
-              <a class="prev" onclick="moveSlide(-1, 'slideshow1')">&#10094;</a>
-              <a class="next" onclick="moveSlide(1, 'slideshow1')">&#10095;</a>
+            <div class="col-md-4">
+                <div class="project-card">
+                    <h2> Smart Mirror with Tkinter</h2>
+                    <p>This project developed using Tkinter in Python, incorporates weather, news, and date/time features for a dynamic display. It fetches live weather data from the OpenWeatherMap API, showing temperature, description, and a weather icon. News headlines are retrieved from the NewsAPI. The date/time section presents the current time, date, and a personalised greeting. Designed for a Raspberry Pi connected to a display, it offers users an interactive experience.</p>
+                </div>
             </div>
-          </div>
-          <!-- Project container 2 -->
-          <div class="col-md-6">
-            <div class="project-container">
-              <div class="project-description">
-                <h2>Road Signs Detection using CNN</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              </div>
+            <div class="col-md-4">
+                <div class="project-card">
+                    <h2> Data Entry: Rock Climbing Club Membership Database</h2>
+                    <p>This is a Rock Climbing Club Membership Management System, utilising Python's Tkinter, SQLite, and Matplotlib. The system allows users to add, display, and clear memberships, with data validation ensuring accurate information entry. Scheduled backups are implemented to secure data integrity. Additionally, the project employs logging for tracking membership additions and clearing events. It also generates insights using SQL views and a visualisation of membership distribution. </p>
+                </div>
             </div>
-          </div>
-          <!-- Slideshow container 2 -->
-          <div class="col-md-6">
-            <div class="slideshow-container" id="slideshow2">
-              <div class="slideshow-inner">
-                <video class="slideshow-img" controls>
-                  <source src="/static/video/my_video.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <img class="slideshow-img" src="/static/img/smartM.JPG" alt="Image 1">
-                <img class="slideshow-img" src="/static/img/background.JPG" alt="Image 2">
-                <img class="slideshow-img" src="/static/img/me.JPG" alt="Image 3">
-              </div>
-              <a class="prev" onclick="moveSlide(-1, 'slideshow2')">&#10094;</a>
-              <a class="next" onclick="moveSlide(1, 'slideshow2')">&#10095;</a>
-            </div>
-          </div>
-          <!-- Project container 3 -->
-          <div class="col-md-6">
-            <div class="project-container">
-              <div class="project-description">
-                <h2>Django Portfolio Project</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Slideshow container 3 -->
-          <div class="col-md-6">
-            <div class="slideshow-container" id="slideshow3">
-              <div class="slideshow-inner">
-                <video class="slideshow-img" controls>
-                  <source src="/static/video/my_video.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <img class="slideshow-img" src="/static/img/smartM.JPG" alt="Image 1">
-                <img class="slideshow-img" src="/static/img/background.JPG" alt="Image 2">
-                <img class="slideshow-img" src="/static/img/me.JPG" alt="Image 3">
-              </div>
-              <a class="prev" onclick="moveSlide(-1, 'slideshow3')">&#10094;</a>
-              <a class="next" onclick="moveSlide(1, 'slideshow3')">&#10095;</a>
-            </div>
-          </div>
-          <!-- Project container 4 -->
-          <div class="col-md-6">
-            <div class="project-container">
-              <div class="project-description">
-                <h2>Data Entry with GUI</h2>
-                <p>This Python application, built using the Tkinter library.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Slideshow container 4 -->
-          <div class="col-md-6">
-            <div class="slideshow-container" id="slideshow4">
-              <div class="slideshow-inner">
-                <video class="slideshow-img" controls>
-                  <source src="/static/video/my_video.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <img class="slideshow-img" src="/static/img/smartM.JPG" alt="Image 1">
-                <img class="slideshow-img" src="/static/img/background.JPG" alt="Image 2">
-                <img class="slideshow-img" src="/static/img/me.JPG" alt="Image 3">
-              </div>
-              <a class="prev" onclick="moveSlide(-1, 'slideshow4')">&#10094;</a>
-              <a class="next" onclick="moveSlide(1, 'slideshow4')">&#10095;</a>
-            </div>
-          </div>
         </div>
-      </div>
-    
-      <!-- Bootstrap Bundle with Popper -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
-      <!-- JavaScript for Slideshows -->
-      <script>
-        let slideIndex = 1;
-    
-        function moveSlide(n, slideshowId) {
-          showSlides(slideIndex += n, slideshowId);
-        }
-    
-        function showSlides(n, slideshowId) {
-          const slides = document.querySelectorAll('#' + slideshowId + ' .slideshow-img');
-          if (n > slides.length) {slideIndex = 1;}
-          if (n < 1) {slideIndex = slides.length; }
-          for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-          }
-          slides[slideIndex - 1].style.display = "block";
-        }
-      </script>
+    </div>
 
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-      <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Optional JavaScript; choose one of the two! -->
 
-      <!-- Option 1: Bootstrap Bundle with Popper -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-      <!-- Option 2: Separate Popper and Bootstrap JS -->
-      <!--
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-      -->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
 </body>
 </html>
