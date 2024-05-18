@@ -164,41 +164,6 @@ a{
     object-fit: cover;
 }
 
-/* highlight container */
-
-.highlight-container {
-    max-width: 800px;
-    margin: 50px auto;
-}
-
-.highlight-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0, 4px 6px black;
-    margin-bottom: 30px;
-    padding: 20px;
-}
-
-.highlight-title {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.highlight-description {
-    font-size: 16px;
-    color: #666;
-
-}
-
-.icon {
-    font-size: 24px;
-    margin-right: 10px;
-    color: blue;
-
-}
-
-
 /* contact container */
 .contact-container {
     max-width: 800px;
