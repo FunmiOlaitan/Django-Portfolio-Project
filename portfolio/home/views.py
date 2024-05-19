@@ -6,10 +6,6 @@ def home(request):
     #return HttpResponse("This is my homepage (/)")
     return render(request, 'home.html')
 
-def projects(request):
-    #return HttpResponse("This is my homepage (/projects)")
-    return render(request, 'projects.html')
-
 def contact(request):
     if request.method=="POST":
         print("This is post ")
@@ -23,4 +19,4 @@ def contact(request):
         print("The data has been written to the db")
 
     #return HttpResponse("This is my homepage (/contacts)")
-    return render(request, 'contact.html')
+    return render(request, 'home.html')

@@ -9,6 +9,5 @@ admin.site.index_title = "Welcome to this Portal"
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('projects/', views.projects, name='projects'),
     path('contact/', views.contact, name='contact'),
 ]
